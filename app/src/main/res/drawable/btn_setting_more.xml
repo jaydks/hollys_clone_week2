@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:gravity="center"
+        android:width="@dimen/margin_15"
+        android:height="@dimen/margin_20"
+        android:drawable="@drawable/img_setting_more"
+        tools:ignore="ResourceCycle" />
+</layer-list>

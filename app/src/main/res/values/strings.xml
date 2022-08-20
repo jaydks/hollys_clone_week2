@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">hollys_clone_week2</string>
+    <string name="txt_main_top">상큼달콤한 여름 스무디를 즐겨보세요</string>
+    <string name="txt_order_top_delivery">딜리버리</string>
+    <string name="txt_order_top_under">이제는 집에서 즐기는 할리스</string>
+    <string name="txt_order_bottom_smartorder">스마트오더</string>
+    <string name="txt_oder_bottom_under">줄서지 않고 주문하세요</string>
+    <string name="txt_myhollys">마이할리스</string>
+    <string name="txt_hollyscard">할리스 카드</string>
+    <string name="txt_coupon">쿠폰</string>
+    <string name="txt_hollysmall">할리스 몰</string>
+    <string name="txt_store">매장</string>
+    <string name="txt_reservcake">홀케이크 예약</string>
+    <string name="btn_login"><u>로그인</u></string>
+    <string name="txt_des_login">로그인을 하면\n새로운 멤버십 서비스를 경험할 수 있어요</string>
+    <string name="txt_cardview1_top">할리스카드</string>
+    <string name="txt_cardview1_bottom">구매하기</string>
+    <string name="txt_cardview2_top">쿠폰</string>
+    <string name="txt_mypage_home">홈</string>
+    <string name="txt_mypage_myhollys">마이 할리스</string>
+    <string name="txt_mypage_smartorder">스마트 오더</string>
+    <string name="txt_mypage_delivery">딜리버리</string>
+    <string name="txt_mypage_hollysmall">할리스몰</string>
+    <string name="txt_mypage_hollysmenu">할리스 메뉴</string>
+    <string name="txt_mypage_findmall">매장찾기</string>
+    <string name="txt_mypage_news">할리스 새소식</string>
+    <string name="txt_mypage_question">자주하는 질문</string>
+    <string name="txt_mypage_customeropinion">고객의 소리</string>
+    <string name="btn_mypage_login">로그인</string>
+    <string name="btn_mypage_singup">멤버십 가입</string>
+    <string name="enterid">아이디</string>
+    <string name="enterpw">아이디</string>
+    <string name="autologin">자동 로그인</string>
 </resources>
