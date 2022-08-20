@@ -1,8 +1,12 @@
 package com.example.hollys_clone_week2
 
 import android.content.Intent
+import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Spannable
+import android.text.SpannableStringBuilder
+import android.text.style.StyleSpan
 import android.util.Log
 import android.widget.Toast
 import com.example.hollys_clone_week2.databinding.ActivityLoginBinding
@@ -16,7 +20,6 @@ class MypageloginedActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d(TAG, "Mypagelogined: onCreate 호출됨")
-        Toast.makeText(this,"Mypagelogined onCreate", Toast.LENGTH_SHORT).show()
 
         binding = ActivityMypageloginedBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -29,6 +32,19 @@ class MypageloginedActivity : AppCompatActivity() {
         binding.imgClose.setOnClickListener {
             finish()
         }
+
+        val ssb = SpannableStringBuilder(binding.btnLoginLogined.text)
+
+        ssb.setSpan(
+            StyleSpan(Typeface.BOLD),
+            0,
+            3,
+            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+        )
+
+        binding.btnLoginLogined.text = ssb
+
+
 
     }
 

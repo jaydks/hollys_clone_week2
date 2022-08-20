@@ -133,7 +133,9 @@
             android:id="@+id/checkbox"
             app:layout_constraintTop_toBottomOf="@id/enterpw"
             android:layout_width="@dimen/margin_30"
+            android:buttonTint="@color/lightblue"
             android:layout_height="@dimen/margin_30"
+            android:checked="true"
             />
         <TextView
             android:layout_marginEnd="@dimen/margin_35"

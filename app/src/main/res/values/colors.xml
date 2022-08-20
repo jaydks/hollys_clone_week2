@@ -14,5 +14,9 @@
     <color name="lightgray">#DBDBDC</color>
     <color name="darkgray">#5E5C5C</color>
     <color name="lightgray2">#EEEEF1</color>
+    <color name="lightblue">#027AFC</color>
 
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="colorControlActivated">@color/red</item>
+    </style>
 </resources>

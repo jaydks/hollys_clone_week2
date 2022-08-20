@@ -13,12 +13,12 @@ val UserInfoList = mutableListOf<UserInfo>(
         userName = "제이1",
     ),
     UserInfo(
-        userID = "제이2222",
+        userID = "jay2222",
         userPW = "2222",
         userName = "제이2",
     ),
     UserInfo(
-        userID = "제이3333.com",
+        userID = "jay3333",
         userPW = "3333",
         userName = "제이3",
     ),

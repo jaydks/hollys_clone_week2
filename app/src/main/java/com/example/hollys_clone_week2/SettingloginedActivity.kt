@@ -15,7 +15,6 @@ class SettingloginedActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d(TAG, "Settinglogined: onCreate 호출됨")
-        Toast.makeText(this, "Settinglogined onCreate", Toast.LENGTH_SHORT).show()
 
         binding = ActivitySettingloginedBinding.inflate(layoutInflater)
         setContentView(binding.root)

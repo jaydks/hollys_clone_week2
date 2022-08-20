@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d(TAG, "Main: onCreate 호출됨")
-        Toast.makeText(this, "Main onCreate", Toast.LENGTH_SHORT).show()
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -44,7 +43,6 @@ class MainActivity : AppCompatActivity() {
         val login_token = pref.getInt("login_token", 0)
 
 
-        //binding.txtMainTop.text = pref.getString("userName", "null") + "님, " + txttop
 
         val ssb = SpannableStringBuilder(binding.txtMainTop.text)
         val currenttxt = binding.txtMainTop.text.toString()
@@ -52,7 +50,9 @@ class MainActivity : AppCompatActivity() {
 
         if (login_token == 1) {
             if (currenttxt== txttoporiginal) {
-                ssb.insert(0, "제이1 님, ")
+                val userName = pref.getString("userName", "null") + "님, "
+
+                ssb.insert(0, userName)
                 binding.txtMainTop.text = ssb
             }
         } else {

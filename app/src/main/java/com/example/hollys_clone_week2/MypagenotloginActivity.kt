@@ -16,7 +16,6 @@ class MypagenotloginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d(TAG, "MypageNotlogin: onCreate 호출됨")
-        Toast.makeText(this,"MypageNotlogin onCreate", Toast.LENGTH_SHORT).show()
 
         binding = ActivityMypagenotloginBinding.inflate(layoutInflater)
         setContentView(binding.root)

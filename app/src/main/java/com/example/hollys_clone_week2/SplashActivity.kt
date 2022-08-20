@@ -16,7 +16,6 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d(TAG, "Splash: onCreate 호출됨")
-        Toast.makeText(this,"Splash onCreate", Toast.LENGTH_SHORT).show()
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -46,7 +45,6 @@ class SplashActivity : AppCompatActivity() {
     override fun onStop() {
         super.onStop()
         Log.d(TAG, "Splash: onStop 호출됨")
-        Toast.makeText(this,"Splash onStop", Toast.LENGTH_SHORT).show()
         finish()
     }
 

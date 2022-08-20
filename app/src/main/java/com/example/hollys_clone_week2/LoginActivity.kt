@@ -2,8 +2,12 @@ package com.example.hollys_clone_week2
 
 import android.content.Intent
 import android.content.SharedPreferences
+import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Spannable
+import android.text.SpannableStringBuilder
+import android.text.style.StyleSpan
 import android.util.Log
 import android.widget.Toast
 import com.example.hollys_clone_week2.databinding.ActivityLoginBinding
@@ -38,9 +42,9 @@ class LoginActivity : AppCompatActivity() {
                         val userName = it.userName
                         edit.putString("userName", userName)
                         edit.apply()
+                        edit.commit()
                         finish()
                     }
-                    Toast.makeText(this, "다시 입력해주세요", Toast.LENGTH_SHORT).show()
                 }
             }
 
@@ -48,6 +52,18 @@ class LoginActivity : AppCompatActivity() {
         binding.imgBack.setOnClickListener {
             finish()
         }
+
+        val ssb = SpannableStringBuilder(binding.txtDesLogin.text)
+
+        ssb.setSpan(
+            StyleSpan(Typeface.BOLD),
+            7,
+            19,
+            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+        )
+
+        binding.txtDesLogin.text = ssb
+
     }
 
     override fun onStart() {
